@@ -14,13 +14,7 @@ HandyJSON is totally depend on the memory layout rules infered from Swift runtim
 [![Cocoapods Platform](https://img.shields.io/cocoapods/p/HandyJSON.svg?style=flat)](http://cocoadocs.org/docsets/HandyJSON)
 [![Codecov branch](https://img.shields.io/codecov/c/github/alibaba/HandyJSON/master.svg?style=flat)](https://codecov.io/gh/alibaba/HandyJSON/branch/master)
 
-## [中文文档](./README_cn.md)
 
-## 交流群
-
-群号: 581331250
-
-![交流群](qq_group.png)
 
 ## Sample Code
 
