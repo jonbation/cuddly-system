@@ -7,43 +7,6 @@ Compared with others, the most significant feature of HandyJSON is that it does 
 
 CaddJson is totally depend on the memory layout rules infered from Swift runtime code. We are watching it and will follow every bit if it changes.
 
-
-## Sample Code
-
-### Deserialization
-
-```swift
-class BasicTypes: CaddJson {
-    var int: Int = 2
-    var doubleOptional: Double?
-    var stringImplicitlyUnwrapped: String!
-
-    required init() {}
-}
-
-let jsonString = "{\"doubleOptional\":1.1,\"stringImplicitlyUnwrapped\":\"hello\",\"int\":1}"
-if let object = BasicTypes.deserialize(from: jsonString) {
-    print(object.int)
-    print(object.doubleOptional!)
-    print(object.stringImplicitlyUnwrapped)
-}
-```
-
-### Serialization
-
-```swift
-
-let object = BasicTypes()
-object.int = 1
-object.doubleOptional = 1.1
-object.stringImplicitlyUnwrapped = “hello"
-
-print(object.toJSON()!) // serialize to dictionary
-print(object.toJSONString()!) // serialize to JSON string
-print(object.toJSONString(prettyPrint: true)!) // serialize to pretty JSON string
-```
-
-
 # Features
 
 * Serialize/Deserialize Object/JSON to/From JSON/Object
