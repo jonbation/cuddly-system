@@ -39,14 +39,13 @@ An overview of types supported can be found at file: [BasicTypes.swift](./HandyJ
 
 **To use with Swift 3.x, version >= 1.8.0**
 
-For Legacy Swift2.x support, take a look at the [swift2 branch](https://github.com/alibaba/HandyJSON/tree/master_for_swift_2x).
 
 ## Cocoapods
 
 Add the following line to your `Podfile`:
 
 ```
-pod 'HandyJSON', '~> 5.0.2'
+pod 'CaddJson', '~> 5.0.2'
 ```
 
 Then, run the following command:
