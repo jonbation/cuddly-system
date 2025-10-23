@@ -1,11 +1,11 @@
-# HandyJSON
+# CaddJson
 
 
-HandyJSON is a framework written in Swift which to make converting model objects( **pure classes/structs** ) to and from JSON easy on iOS.
+CaddJson is a framework written in Swift which to make converting model objects( **pure classes/structs** ) to and from JSON easy on iOS.
 
 Compared with others, the most significant feature of HandyJSON is that it does not require the objects inherit from NSObject(**not using KVC but reflection**), neither implements a 'mapping' function(**writing value to memory directly to achieve property assignment**).
 
-HandyJSON is totally depend on the memory layout rules infered from Swift runtime code. We are watching it and will follow every bit if it changes.
+CaddJson is totally depend on the memory layout rules infered from Swift runtime code. We are watching it and will follow every bit if it changes.
 
 
 ## Sample Code
@@ -13,7 +13,7 @@ HandyJSON is totally depend on the memory layout rules infered from Swift runtim
 ### Deserialization
 
 ```swift
-class BasicTypes: HandyJSON {
+class BasicTypes: CaddJson {
     var int: Int = 2
     var doubleOptional: Double?
     var stringImplicitlyUnwrapped: String!
